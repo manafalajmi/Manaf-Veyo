@@ -1,7 +1,7 @@
-function foo() {
+function IntRoman() {
     return true
 }
 
 module.exports = {
-    foo
+    IntRoman
 }
