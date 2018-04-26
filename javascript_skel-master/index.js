@@ -11,15 +11,28 @@ function IntRoman(number) {
 
     for (var i = size.length; i >= 0; i--) {
         var count = 0;
+        var value = number / size[i];
 
-        if (number / size[i] >= 1) {
-            while (number >= size[i]) {
-                count++;
-                number -= size[i]
+        if (value >= 1) {
+
+            if (value == 4) {
+                number -= 4;
+                word += 'IV';
+            } else if (value == 9) {
+                number -= 9;
+                word += 'IX'
             }
+            // while (number >= size[i]) {
+            //     count++;
+            //     number -= size[i]
+            // }
+            else {
+                for (var j = 0; j < value; j++) {
+                    number -= size[i];
+                    word += Numeral[i];
+                }
 
-            for (var j = 0; j < count; j++) {
-                word += Numeral[i];
+
             }
         }
     }
