@@ -6,13 +6,13 @@ function IntRoman(number) {
     var size = [1, 5, 10, 50, 100, 500, 1000]
     var Numeral = ["I", "V", "X", "L", "C", "D", "M"]
 
-    //create anm empty string that ill return 
+    //create an empty string that will be returned 
     var word = "";
 
-    for (var i = size.length; i >= 0; i--) {
+    for (var i = size.length - 1; i >= 0; i = i - 2) {
         var count = 0;
         var value = number / size[i];
-
+        value = Math.floor(value);
         if (value >= 1) {
 
             if (value == 4) {
@@ -27,12 +27,16 @@ function IntRoman(number) {
             //     number -= size[i]
             // }
             else {
+                if (value >= 5) {
+                    number -= size[i + 1]
+                    value -= 5;
+                    word += Numeral[i + 1];
+                }
+
                 for (var j = 0; j < value; j++) {
                     number -= size[i];
                     word += Numeral[i];
                 }
-
-
             }
         }
     }

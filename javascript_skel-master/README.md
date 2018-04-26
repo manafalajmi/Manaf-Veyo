@@ -35,3 +35,16 @@ So I can go through an array of numerals/values, check if that value exists in x
 -------
 Ok so the code works for 1-3 and 5-10, but doesnt work for the 2 edge cases i mentioned before, i.e. 4 and 9, where i got IIII, and VIIII respectively. 
 So according to how its meant to be read, 9 = 10 - 1, where 10 =X, and 1 =I, so 9 is equivalent to X - I, which becomes IX. 
+
+-----
+So lets say I pass in a 4 initially, like in my 4th test, my code will iterate through the array I have all the way down to 5, and it should never get a value equal or greater than 1 in the if statement, so it will pass through when I'm dividing it by 1. So lets say i divide 4/1, ill get 4, so if i get 4 i can just return IV.
+
+Or get rid of the while loop, see what value i get when i divide, if its anything except 4 or 9 it carries on as normal, if it is a 4 or 9 it triggers the special case....
+
+
+---- 
+ok so lets think this through a bit more, lets take a large number like 2999, i divide it by a 1000, and get 2.999, so i want to remove 2 *1000 from the number, and conctanenate the values for 2000, which is MM, then move on to 999, it cant be divided by 1000, so go to 500. actually if i just go over the values 1,10, 100,1000, ill be able to check for the special edge cases. 
+
+EEEEEEY it works for these cases so lets move on to bigger numbers.
+
+--------
