@@ -48,3 +48,10 @@ ok so lets think this through a bit more, lets take a large number like 2999, i 
 EEEEEEY it works for these cases so lets move on to bigger numbers.
 
 --------
+
+After passing in more random values, it seems like numbers that don't inclue 40, 400, 90, 900 work in the code, while the ones with 4/9 don't. This'll need some more test cases.
+So ill also add 999, and 444 to see what happens?
+ok ya they didint work
+ohhh right i hard coded the values for 4 and 9 so now i have to make it depend on the loop
+
+So the 4 = 5-1, while the 9 =10-1, so the 4 is i+1 -i, while 9 should be i+2 -i

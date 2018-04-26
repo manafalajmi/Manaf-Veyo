@@ -66,3 +66,48 @@ describe('passing in 10', () => {
         equal(IntRoman(10), "X")
     })
 })
+
+describe('passing in 123', () => {
+    it('What is it?', () => {
+        equal(IntRoman(123), "CXXIII")
+    })
+
+})
+
+describe('passing in 300', () => {
+    it('What is it?', () => {
+        equal(IntRoman(300), "CCC")
+    })
+
+})
+
+describe('passing in 40', () => {
+    it('What is it?', () => {
+        equal(IntRoman(40), "XL")
+    })
+
+})
+
+describe('passing in 1995', () => {
+    it('What is it?', () => {
+        equal(IntRoman(1995), "MCMXCV")
+    })
+})
+
+describe('passing in 19', () => {
+    it('What is it?', () => {
+        equal(IntRoman(19), "XIX")
+    })
+})
+
+describe('passing in 444', () => {
+    it('What is it?', () => {
+        equal(IntRoman(444), "CDXLIV")
+    })
+})
+
+describe('passing in 999', () => {
+    it('What is it?', () => {
+        equal(IntRoman(999), "CMXCIX")
+    })
+})

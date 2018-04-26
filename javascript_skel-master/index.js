@@ -16,17 +16,16 @@ function IntRoman(number) {
         if (value >= 1) {
 
             if (value == 4) {
-                number -= 4;
-                word += 'IV';
+                value -= 4;
+                number -= 4 * size[i];
+                word += Numeral[i]
+                word += Numeral[i + 1]
             } else if (value == 9) {
-                number -= 9;
-                word += 'IX'
-            }
-            // while (number >= size[i]) {
-            //     count++;
-            //     number -= size[i]
-            // }
-            else {
+                value -= 9;
+                number -= 9 * size[i];
+                word += Numeral[i];
+                word += Numeral[i + 2]
+            } else {
                 if (value >= 5) {
                     number -= size[i + 1]
                     value -= 5;
