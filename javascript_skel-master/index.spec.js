@@ -23,5 +23,10 @@ describe('passing in 4', () => {
     it('What is it?', () => {
         equal(IntRoman(4), "IV")
     })
+})
 
+describe('passing in 5', () => {
+    it('What is it?', () => {
+        equal(IntRoman(5), "V")
+    })
 })
