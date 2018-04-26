@@ -30,3 +30,39 @@ describe('passing in 5', () => {
         equal(IntRoman(5), "V")
     })
 })
+
+describe('passing in 6', () => {
+    it('What is it?', () => {
+        equal(IntRoman(6), "VI")
+    })
+})
+
+describe('passing in 7', () => {
+    it('What is it?', () => {
+        equal(IntRoman(7), "VII")
+    })
+})
+
+describe('passing in 6', () => {
+    it('What is it?', () => {
+        equal(IntRoman(6), "VI")
+    })
+})
+
+describe('passing in 8', () => {
+    it('What is it?', () => {
+        equal(IntRoman(8), "VIII")
+    })
+})
+
+describe('passing in 9', () => {
+    it('What is it?', () => {
+        equal(IntRoman(9), "IX")
+    })
+})
+
+describe('passing in 10', () => {
+    it('What is it?', () => {
+        equal(IntRoman(10), "X")
+    })
+})
