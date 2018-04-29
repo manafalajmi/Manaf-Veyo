@@ -11,20 +11,18 @@ function IntRoman(number) {
 
     for (var i = size.length - 1; i >= 0; i = i - 2) {
         var count = 0;
-        var value = number / size[i];
-        value = Math.floor(value);
+        var value = Math.floor(number / size[i]);
+
         if (value >= 1) {
 
             if (value == 4) {
                 value -= 4;
                 number -= 4 * size[i];
-                word += Numeral[i]
-                word += Numeral[i + 1]
+                word += Numeral[i] + Numeral[i + 1];
             } else if (value == 9) {
                 value -= 9;
                 number -= 9 * size[i];
-                word += Numeral[i];
-                word += Numeral[i + 2]
+                word += Numeral[i] + Numeral[i + 2];
             } else {
                 if (value >= 5) {
                     number -= size[i + 1]
@@ -43,6 +41,9 @@ function IntRoman(number) {
 
 
 }
+
+
+
 
 module.exports = {
     IntRoman
