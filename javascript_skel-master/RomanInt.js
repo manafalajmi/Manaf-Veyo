@@ -34,7 +34,10 @@ function RomanInt(strg) {
                 if (temp2 == 4 || temp2 == 9) {
                     number += (nex - curr);
 
+                } else {
+                    return strg;
                 }
+
                 //iterate again since we used 2 values
                 i++;
                 console.error(number);

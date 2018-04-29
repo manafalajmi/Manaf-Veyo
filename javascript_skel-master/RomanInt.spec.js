@@ -77,13 +77,13 @@ describe('passing in 900', () => {
 })
 describe('passing in IC', () => {
     it('What is it?', () => {
-        equal(RomanInt("IC"), IC)
+        equal(RomanInt("IC"), "IC")
     })
 })
 
 describe('passing in 20', () => {
     it('What is it?', () => {
-        equal(RomanInt(20), IC)
+        equal(RomanInt(20), "number")
     })
 })
 describe('passing in IC', () => {
