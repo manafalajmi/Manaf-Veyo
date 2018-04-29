@@ -88,7 +88,7 @@ Next option is update the for loop i have to add the 4 and 9 values to my hash m
 40=XL, 90= XC
 400 = CD, 900 = CM, 
 so in each case we have a smaller number followed by a larger one. So i can check for that and thatll lmk if i have a 4 or 9 then i can just do the larger number - the smaller one, only issue with that is that if the string passed in is incorrect itll give me an incorrect value, so it has to be a tighter condition lets try as is.
-ok cool it works for 1-10. Im gonna sleep before the sun rises, so for tommorow/today,test larger values,test for values that shouldnt be allowed, i.e. not string, not caps, not in map,
+ok cool it works for 1-10. Im gonna sleep  so for tommorow/today,test larger values,test for values that shouldnt be allowed, i.e. not string, not caps, not in map,
 
 -1---------------------
 

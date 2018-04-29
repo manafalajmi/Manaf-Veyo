@@ -52,3 +52,42 @@ describe('passing in 10', () => {
         equal(RomanInt("X"), 10)
     })
 })
+
+describe('passing in 90', () => {
+    it('What is it?', () => {
+        equal(RomanInt("XL"), 40)
+    })
+})
+
+describe('passing in 90', () => {
+    it('What is it?', () => {
+        equal(RomanInt("XC"), 90)
+    })
+})
+
+describe('passing in 400', () => {
+    it('What is it?', () => {
+        equal(RomanInt("CD"), 400)
+    })
+})
+describe('passing in 900', () => {
+    it('What is it?', () => {
+        equal(RomanInt("CM"), 900)
+    })
+})
+describe('passing in IC', () => {
+    it('What is it?', () => {
+        equal(RomanInt("IC"), IC)
+    })
+})
+
+describe('passing in 20', () => {
+    it('What is it?', () => {
+        equal(RomanInt(20), IC)
+    })
+})
+describe('passing in IC', () => {
+    it('What is it?', () => {
+        equal(RomanInt("ix"), 9)
+    })
+})
