@@ -55,3 +55,13 @@ ok ya they didint work
 ohhh right i hard coded the values for 4 and 9 so now i have to make it depend on the loop
 
 So the 4 = 5-1, while the 9 =10-1, so the 4 is i+1 -i, while 9 should be i+2 -i
+-------
+ok all the new tests pass now... im gonna commit and take a break work on my papers, see me back here at some point.
+When i get back i need to do more comprehensive testing of the numbers and outputs, aswell as do input and output checks.
+
+yalla bye.
+
+---------------
+woooooooooo im finally done with that, man that took way longer than i thought
+
+ok so im gonna test a couple more inputs, probably 44, 99, 444, 999 for now, oh nvm 444 and 999 are already in there, guess ill just add 44 and 99 and review the edge cases after the sun rises. 

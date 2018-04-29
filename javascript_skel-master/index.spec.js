@@ -111,3 +111,15 @@ describe('passing in 999', () => {
         equal(IntRoman(999), "CMXCIX")
     })
 })
+
+describe('passing in 44', () => {
+    it('What is it?', () => {
+        equal(IntRoman(44), "XLIV")
+    })
+})
+
+describe('passing in 99', () => {
+    it('What is it?', () => {
+        equal(IntRoman(99), "XCIX")
+    })
+})
