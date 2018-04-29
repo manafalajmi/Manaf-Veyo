@@ -1,5 +1,9 @@
 function RomanInt(strg) {
 
+    if (typeof strg !== 'string') {
+        return 'not string'
+
+    }
     var size = [1, 5, 10, 50, 100, 500, 1000]
     var Numerals = ["I", "V", "X", "L", "C", "D", "M"]
     var word = new String(strg)
@@ -19,11 +23,11 @@ function RomanInt(strg) {
     //Right to left
     for (i = 0; i < strg.length; i++) {
         //checks if the value after the current exists
-        curr = myMap.get(strg.charAt(i));
+        curr = myMap.get(strg.charAt(i).toUpperCase());
 
         if (strg.charAt(i + 1) != "") {
 
-            nex = myMap.get(strg.charAt(i + 1));
+            nex = myMap.get(strg.charAt(i + 1).toUpperCase());
 
             //if it does, is the value of the next char larger than the current
             if (curr < nex) {

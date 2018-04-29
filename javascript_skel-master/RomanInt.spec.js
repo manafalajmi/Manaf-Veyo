@@ -83,7 +83,7 @@ describe('passing in IC', () => {
 
 describe('passing in 20', () => {
     it('What is it?', () => {
-        equal(RomanInt(20), "number")
+        equal(RomanInt(20), "not string")
     })
 })
 describe('passing in IC', () => {
