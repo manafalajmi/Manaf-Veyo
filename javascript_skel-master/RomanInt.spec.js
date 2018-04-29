@@ -7,7 +7,7 @@ describe('passing in 1', () => {
     })
 })
 
-describe('passing in ', () => {
+describe('passing in 2', () => {
     it('What is it?', () => {
         equal(RomanInt("II"), 2)
     })
@@ -25,5 +25,30 @@ describe('passing in 4', () => {
 describe('passing in 5', () => {
     it('What is it?', () => {
         equal(RomanInt("V"), 5)
+    })
+})
+describe('passing in 6', () => {
+    it('What is it?', () => {
+        equal(RomanInt("VI"), 6)
+    })
+})
+describe('passing in 7', () => {
+    it('What is it?', () => {
+        equal(RomanInt("VII"), 7)
+    })
+})
+describe('passing in 8', () => {
+    it('What is it?', () => {
+        equal(RomanInt("VIII"), 8)
+    })
+})
+describe('passing in 9', () => {
+    it('What is it?', () => {
+        equal(RomanInt("IX"), 9)
+    })
+})
+describe('passing in 10', () => {
+    it('What is it?', () => {
+        equal(RomanInt("X"), 10)
     })
 })

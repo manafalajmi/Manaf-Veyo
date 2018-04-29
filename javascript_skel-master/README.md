@@ -65,3 +65,46 @@ yalla bye.
 woooooooooo im finally done with that, man that took way longer than i thought
 
 ok so im gonna test a couple more inputs, probably 44, 99, 444, 999 for now, oh nvm 444 and 999 are already in there, guess ill just add 44 and 99 and review the edge cases after the sun rises. 
+
+ok so looking  over the code again, i can probably use a hash map if i wanted to, but this solution is more fun,
+
+-------------------------------------------
+Im gonna switch over to the next part for now RomanInts
+
+So same cases and logic here just backwards, im gonna pass in a string read it from either R->L or L->R check each symbol and get the value for that symbol
+
+Base case will be any number not including 4 and 9 because those 2 will need 2 characters to be read while the rest only need the current value read in. because 9 =10-1, 4= 5-1, but 8 = 5+3 and so on. 
+So lets start with the base cases. ill make a hash map to pull up the values for the symbols. 
+
+ok so i have map now i loop through, check each individual value of the string and get it values from the map
+
+ok it works for 1-5 not including 4, lets test up to 10... works not including 4 and 9 like it should
+
+-------------------------------
+ok so for 4 and 9, i can just hard code those values into my hash map, but thats kind of boring. 
+Next option is update the for loop i have to add the 4 and 9 values to my hash map, but thats also kind of boring
+
+4 = IV, 9=IX
+40=XL, 90= XC
+400 = CD, 900 = CM, 
+so in each case we have a smaller number followed by a larger one. So i can check for that and thatll lmk if i have a 4 or 9 then i can just do the larger number - the smaller one, only issue with that is that if the string passed in is incorrect itll give me an incorrect value, so it has to be a tighter condition lets try as is.
+ok cool it works for 1-10. Im gonna sleep before the sun rises, so for tommorow/today,test larger values,test for values that shouldnt be allowed, i.e. not string, not caps, not in map,
+
+-1---------------------
+
+
+
+Method: RomanInts
+Parameter: String
+Output: Number
+
+This is probably the basic structure I'll see if it needs updating later
+
+
+1-----------------------
+Task List:
+IntRoman : test non int inputs, test doubles, values smaller than 1, and negatives
+            -clean up the code a bit
+
+RomanInt: well do everything
+            
