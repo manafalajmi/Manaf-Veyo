@@ -1,6 +1,10 @@
 function IntRoman(number) {
     //converting a integer input into roman numerals
 
+    if (Math.floor(number) !== number || number < 1) {
+        console.error(number);
+        return "invalid type";
+    }
     //size is the numerical value, and numeral is the roman numeral
     //version of that number
     var size = [1, 5, 10, 50, 100, 500, 1000]

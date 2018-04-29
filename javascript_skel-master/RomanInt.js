@@ -39,21 +39,21 @@ function RomanInt(strg) {
                     number += (nex - curr);
 
                 } else {
-                    return strg;
+                    return "invalid string";
                 }
 
                 //iterate again since we used 2 values
                 i++;
-                console.error(number);
+                //console.error(number);
             } else {
                 //else just add
                 number += curr;
-                console.error(number);
+                //console.error(number);
             }
         } else {
             //else just add 
             number += curr;
-            console.error(number);
+            //console.error(number);
 
         }
     }

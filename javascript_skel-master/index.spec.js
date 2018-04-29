@@ -123,3 +123,28 @@ describe('passing in 99', () => {
         equal(IntRoman(99), "XCIX")
     })
 })
+
+describe('passing in 1.5', () => {
+    it('What is it?', () => {
+        equal(IntRoman(1.5), "invalid type")
+    })
+})
+
+describe('passing in hello', () => {
+    it('What is it?', () => {
+        equal(IntRoman("hello"), "invalid type")
+    })
+})
+
+describe('passing in 0.1', () => {
+    it('What is it?', () => {
+        equal(IntRoman(0.1), "invalid type")
+    })
+})
+
+
+describe('passing in -3', () => {
+    it('What is it?', () => {
+        equal(IntRoman(-3), "invalid type")
+    })
+})

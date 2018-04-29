@@ -77,7 +77,7 @@ describe('passing in 900', () => {
 })
 describe('passing in IC', () => {
     it('What is it?', () => {
-        equal(RomanInt("IC"), "IC")
+        equal(RomanInt("IC"), "invalid string")
     })
 })
 
