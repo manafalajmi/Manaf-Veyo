@@ -50,21 +50,21 @@ function RomanInt(strg) {
 
                 //iterate again since we used 2 values
                 i++;
-                //console.error(number);
+
             } else {
                 //else just add
                 number += curr;
-                //console.error(number);
+
             }
         } else {
             //else just add 
             number += curr;
-            //console.error(number);
+
 
         }
     }
 
-    return number
+    return number;
 }
 
 
