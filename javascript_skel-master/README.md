@@ -107,12 +107,14 @@ IC is not a String in the language
 ix is lower case
 
 
-
-
-1-----------------------
+-----------------------
 Task List:
 IntRoman : test non int inputs, test doubles, values smaller than 1, and negatives
             -clean up the code a bit
 
 RomanInt: well do everything
             
+-----------------------
+Added some extra tests the code should be done.
+
+-------------------------------------------------

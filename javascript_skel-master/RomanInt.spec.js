@@ -116,6 +116,6 @@ describe('passing in 2765', () => {
 })
 describe('passing in 3999', () => {
     it('What is it?', () => {
-        equal(RomanInt("MMMCMXCIX"), 3999)
+        equal(RomanInt("MMMCMXCIXt"), "not in alphabet")
     })
 })

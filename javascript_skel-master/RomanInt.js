@@ -25,19 +25,25 @@ function RomanInt(strg) {
         //checks if the value after the current exists
         curr = myMap.get(strg.charAt(i).toUpperCase());
 
+        //checks if the inputted string contains a letter not in the alphabet
+        if (curr == undefined)
+            return "not in alphabet"
+
         if (strg.charAt(i + 1) != "") {
 
             nex = myMap.get(strg.charAt(i + 1).toUpperCase());
 
-            //if it does, is the value of the next char larger than the current
+            if (nex == undefined)
+                return "not in alphabet"
+                    //if it does, is the value of the next char larger than the current
             if (curr < nex) {
                 //if it is it should be the 4 or 9 edge case so do larger - smaller
 
                 var temp = (nex - curr);
                 var temp2 = temp / curr;
-                if (temp2 == 4 || temp2 == 9) {
-                    number += (nex - curr);
 
+                if (temp2 == 4 || temp2 == 9) {
+                    number += temp;
                 } else {
                     return "invalid string";
                 }
