@@ -148,3 +148,25 @@ describe('passing in -3', () => {
         equal(IntRoman(-3), "invalid type")
     })
 })
+
+describe('passing in 1888', () => {
+    it('What is it?', () => {
+        equal(IntRoman(1888), "MDCCCLXXXVIII")
+    })
+})
+
+describe('passing in 1987', () => {
+    it('What is it?', () => {
+        equal(IntRoman(1987), "MCMLXXXVII")
+    })
+})
+describe('passing in 2765', () => {
+    it('What is it?', () => {
+        equal(IntRoman(2765), "MMDCCLXV")
+    })
+})
+describe('passing in 3999', () => {
+    it('What is it?', () => {
+        equal(IntRoman(3999), "MMMCMXCIX")
+    })
+})

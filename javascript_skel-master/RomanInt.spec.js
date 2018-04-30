@@ -91,3 +91,31 @@ describe('passing in IC', () => {
         equal(RomanInt("ix"), 9)
     })
 })
+describe('passing in IC', () => {
+    it('What is it?', () => {
+        equal(RomanInt("MCMXCV"), 1995)
+    })
+})
+
+
+describe('passing in 1888', () => {
+    it('What is it?', () => {
+        equal(RomanInt("MDCCCLXXXVIII"), 1888)
+    })
+})
+
+describe('passing in 1987', () => {
+    it('What is it?', () => {
+        equal(RomanInt("MCMLXXXVII"), 1987)
+    })
+})
+describe('passing in 2765', () => {
+    it('What is it?', () => {
+        equal(RomanInt("MMDCCLXV"), 2765)
+    })
+})
+describe('passing in 3999', () => {
+    it('What is it?', () => {
+        equal(RomanInt("MMMCMXCIX"), 3999)
+    })
+})
