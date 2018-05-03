@@ -118,3 +118,7 @@ RomanInt: well do everything
 Added some extra tests the code should be done.
 
 -------------------------------------------------
+Feedback : 
+Code is too complex
+Not tdd enough - not bothered to do anything about this now
+but im just gonna write up the less complex(kinda boring) solutions i came up with before
